@@ -255,7 +255,3 @@ if st.button("Generate Cover Letter →", type="primary"):
         st.text_area("Generated Output", value=letter, height=350)
         st.caption(f"{len(letter.split())} words · {len(letter)} chars")
         st.download_button("📥 Download TXT", letter, "cover_letter.txt")
-
-# Sidebar
-with st.sidebar:
-    st.info("💡 Push to GitHub and deploy on Streamlit Community Cloud for public URL.")
